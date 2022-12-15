@@ -4,18 +4,21 @@ runas: root
 
 files:
   - source: /
-    destination: /home/ubuntu/abhay-practice-node-express-realworld-example-app/
+    destination: /home/ubuntu/node-express-realworld-example-app
     overwrite: true
-    timeout: 500
-    
+    timeout: 50
+
 hooks:
   BeforeInstall:
-    - location: script/install.sh
-      timeout: 300
+    - location: scripts/install.sh
+      timeout: 50
       runas: root
-
-
+  ApplicationStop:
+    - location: scripts/stop_script.sh
+      timeout: 50
+      runas: root
   ApplicationStart:
-    - location: script/start.sh
-      timeout: 300
+    - location: scripts/start_script.sh
+      timeout: 60
       runas: root
+ 
