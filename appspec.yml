@@ -4,7 +4,7 @@ runas: root
 
 files:
   - source: /
-    destination: /home/ubuntu/node-express-realworld-example-app
+    destination: /home/ubuntu/abhay-practice-node-express-realworld-example-app/
     overwrite: true
     timeout: 50
 
