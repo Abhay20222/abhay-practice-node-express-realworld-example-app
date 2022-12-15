@@ -2,7 +2,7 @@ version: 0.2
 runas: root
 env:
   secrets-manager:
-    MONGODB_URL: "ABHAY_MONGO_SECRET:mongodb_url"
+    MONGODB_URL: "ABHAY_MONGO_SECRET:mongodb-url"
     
 phases: 
   pre_build:
