@@ -33,7 +33,7 @@ if (!isProduction) {
 if(isProduction){
   mongoose.connect(process.env.MONGODB_URI);
 } else {
-  mongoose.connect(process.env.MONGODB_URI);
+  mongoose.connect('mongodb://abhay_db:abhay_dbpw@10.16.16.96:27017,10.16.16.18:27017,10.16.16.98:27017/conduit?authSource=admin&replicaSet=rs0');
   mongoose.set('debug', true);
 }
 
